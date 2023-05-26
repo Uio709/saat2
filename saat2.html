@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Digital Clock</title>
+	<style>
+		#clock {
+			font-size: 3em;
+			text-align: center;
+			color: navy;
+			border: 5px solid black;
+			border-radius: 50%;
+			padding: 10px;
+			margin-top: 20px;
+            background-color: lightblue;
+		}
+		#city {
+			font-size: 3em;
+			text-align: center;
+			color: black;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana,sans-serif;
+			margin-top: 10px;
+		}
+        body {
+        background-image: url("/Users/jvl/Desktop/FreeVector-Blue-Background-Graphics.jpg");
+        background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+        }
+img {
+  width: 100%;
+  height: auto;
+}
+
+	</style>
+    <style>
+#clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+</style>
+
+
+<div id="clock-container"></div>
+    
+</head>
+<head>
+<title>Digital clock</title>
+<style>
+    #clock {
+			font-size: 3em;
+			text-align: center;
+			color: navy;
+			border: 5px solid black;
+			border-radius: 50%;
+			padding: 10px;
+			margin-top: 20px;
+            background-color: lightblue;
+		}
+		#city {
+			font-size: 3em;
+			text-align: center;
+			color: black;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana,sans-serif;
+			margin-top: 10px;
+		}
+</style>
+
+
+
+
+</head>
+<head>
+    <title>Digital clock</title>
+    <style>
+        #clock {
+                font-size: 3em;
+                text-align: center;
+                color: navy;
+                border: 5px solid black;
+                border-radius: 50%;
+                padding: 10px;
+                margin-top: 20px;
+                background-color: lightblue;
+            }
+            #city {
+                font-size: 3em;
+                text-align: center;
+                color: black;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana,sans-serif;
+                margin-top: 10px;
+            }
+    </style>
+<body>
+	<div id="city">Tehran</div>
+	<div id="clock"></div>
+    <div class="watch-container">
+        <div class="watch-face"></div>
+        <div class="watch-frame"></div>
+		
+    
+
+	<script>
+		function updateClock() {
+			let now = new Date();
+			let options = {
+				timeZone: 'Asia/Tehran',
+				hour: 'numeric',
+				minute: 'numeric',
+				second: 'numeric'
+			};
+			let time = now.toLocaleString('en-IR', options);
+
+			document.getElementById("clock").innerText = time;
+		}
+
+		setInterval(updateClock, 1000);
+	</script>
+    
+</body>
+</html>
+
+
+
